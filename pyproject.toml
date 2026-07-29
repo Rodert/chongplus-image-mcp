@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "chongplus-image-mcp"
+version = "0.1.0"
+description = "A friendly MCP server for ChongPlus image generation and editing"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "ChongPlus Image MCP contributors" }]
+dependencies = ["mcp>=1.20,<2"]
+
+[project.optional-dependencies]
+dev = []
+
+[project.scripts]
+chongplus-image-mcp = "chongplus_image_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/chongplus_image_mcp"]
