@@ -18,7 +18,19 @@ Generated images are saved locally. The tools return their absolute paths, so an
 
 ## Install
 
-The simplest route is to ask an MCP-capable AI client to install this repository. For manual configuration, use `uvx`:
+Paste the following into an MCP-capable AI client:
+
+```text
+Please install and configure ChongPlus Image MCP:
+https://github.com/Rodert/chongplus-image-mcp
+
+Install it as a local stdio MCP server using:
+uvx --from git+https://github.com/Rodert/chongplus-image-mcp chongplus-image-mcp
+
+After configuration, call setup_status to check the API key. If it is not configured, ask me for my ChongPlus API key and call configure_api_key to save it securely in the local configuration. Reuse the saved key afterwards and do not ask me to configure environment variables.
+```
+
+For manual configuration, use `uvx`:
 
 ```json
 {

@@ -18,7 +18,19 @@
 
 ## 安裝
 
-最簡單的方式是請支援 MCP 的 AI 客戶端安裝此倉庫。手動設定時可使用 `uvx`：
+將以下內容直接複製給支援 MCP 的 AI 用戶端：
+
+```text
+請安裝並設定 ChongPlus Image MCP：
+https://github.com/Rodert/chongplus-image-mcp
+
+請將它作為本機 stdio MCP Server 安裝，使用命令：
+uvx --from git+https://github.com/Rodert/chongplus-image-mcp chongplus-image-mcp
+
+設定完成後，先呼叫 setup_status 檢查 API Key 狀態。若未設定，請主動向我索取 ChongPlus API Key，並呼叫 configure_api_key 安全儲存到本機設定；之後直接重複使用該金鑰，不要要求我設定環境變數。
+```
+
+手動設定時可使用 `uvx`：
 
 ```json
 {

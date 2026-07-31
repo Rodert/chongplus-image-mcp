@@ -18,7 +18,19 @@ ChongPlus Image API を使い、AI アシスタントによる画像生成と参
 
 ## インストール
 
-最も簡単なのは、MCP 対応 AI クライアントにこのリポジトリのインストールを依頼する方法です。手動設定では `uvx` を使用できます。
+以下を MCP 対応 AI クライアントにそのまま貼り付けてください。
+
+```text
+ChongPlus Image MCP をインストールして設定してください:
+https://github.com/Rodert/chongplus-image-mcp
+
+次のコマンドを使用して、ローカル stdio MCP Server としてインストールしてください:
+uvx --from git+https://github.com/Rodert/chongplus-image-mcp chongplus-image-mcp
+
+設定後、setup_status を呼び出して API Key の状態を確認してください。未設定の場合は ChongPlus API Key を私に尋ね、configure_api_key を呼び出してローカル設定に安全に保存してください。その後は保存済みのキーを再利用し、環境変数の設定を求めないでください。
+```
+
+手動設定では `uvx` を使用できます。
 
 ```json
 {
